@@ -12,6 +12,7 @@
 		AFB5429C1E0DA34C00A5A503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429A1E0DA34C00A5A503 /* Main.storyboard */; };
 		AFB5429E1E0DA34C00A5A503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429D1E0DA34C00A5A503 /* Assets.xcassets */; };
 		AFB542A11E0DA34C00A5A503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429F1E0DA34C00A5A503 /* LaunchScreen.storyboard */; };
+		AFB542B31E0ED04700A5A503 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542B21E0ED04700A5A503 /* DropShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AFB5429D1E0DA34C00A5A503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB542A01E0DA34C00A5A503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB542A21E0DA34C00A5A503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFB542B21E0ED04700A5A503 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		AFB542AC1E0DA38200A5A503 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				AFB542B21E0ED04700A5A503 /* DropShadow.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB542991E0DA34C00A5A503 /* MainViewController.swift in Sources */,
+				AFB542B31E0ED04700A5A503 /* DropShadow.swift in Sources */,
 				AFB542971E0DA34C00A5A503 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
