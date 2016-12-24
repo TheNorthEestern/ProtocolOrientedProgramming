@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF8B98BB1E0ED18B002DB83A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF8B98BA1E0ED18B002DB83A /* HeaderView.swift */; };
 		AFB542971E0DA34C00A5A503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542961E0DA34C00A5A503 /* AppDelegate.swift */; };
 		AFB542991E0DA34C00A5A503 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542981E0DA34C00A5A503 /* MainViewController.swift */; };
 		AFB5429C1E0DA34C00A5A503 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429A1E0DA34C00A5A503 /* Main.storyboard */; };
 		AFB5429E1E0DA34C00A5A503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429D1E0DA34C00A5A503 /* Assets.xcassets */; };
 		AFB542A11E0DA34C00A5A503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429F1E0DA34C00A5A503 /* LaunchScreen.storyboard */; };
-		AFB542B31E0ED04700A5A503 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542B21E0ED04700A5A503 /* DropShadow.swift */; };
+		AFB542B31E0ED04700A5A503 /* PDropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542B21E0ED04700A5A503 /* PDropShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF8B98BA1E0ED18B002DB83A /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		AFB542931E0DA34C00A5A503 /* TacoPOP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TacoPOP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFB542961E0DA34C00A5A503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFB542981E0DA34C00A5A503 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -23,7 +25,7 @@
 		AFB5429D1E0DA34C00A5A503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFB542A01E0DA34C00A5A503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB542A21E0DA34C00A5A503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFB542B21E0ED04700A5A503 /* DropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
+		AFB542B21E0ED04700A5A503 /* PDropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDropShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,6 @@
 				AFB542AA1E0DA37800A5A503 /* Models */,
 				AFB542A91E0DA37000A5A503 /* Views */,
 				AFB542A81E0DA36C00A5A503 /* Controllers */,
-				AFB542981E0DA34C00A5A503 /* MainViewController.swift */,
 			);
 			path = TacoPOP;
 			sourceTree = "<group>";
@@ -71,6 +72,7 @@
 		AFB542A81E0DA36C00A5A503 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AFB542981E0DA34C00A5A503 /* MainViewController.swift */,
 				AFB542961E0DA34C00A5A503 /* AppDelegate.swift */,
 			);
 			name = Controllers;
@@ -79,6 +81,7 @@
 		AFB542A91E0DA37000A5A503 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AF8B98BA1E0ED18B002DB83A /* HeaderView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -102,7 +105,7 @@
 		AFB542AC1E0DA38200A5A503 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				AFB542B21E0ED04700A5A503 /* DropShadow.swift */,
+				AFB542B21E0ED04700A5A503 /* PDropShadow.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -197,8 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFB542991E0DA34C00A5A503 /* MainViewController.swift in Sources */,
-				AFB542B31E0ED04700A5A503 /* DropShadow.swift in Sources */,
+				AFB542B31E0ED04700A5A503 /* PDropShadow.swift in Sources */,
 				AFB542971E0DA34C00A5A503 /* AppDelegate.swift in Sources */,
+				AF8B98BB1E0ED18B002DB83A /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
