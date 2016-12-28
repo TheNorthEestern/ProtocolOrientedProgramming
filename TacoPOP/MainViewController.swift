@@ -8,8 +8,13 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, PDataServiceDelegate {
+    
     @IBOutlet weak var headerView: HeaderView!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var dataService : DataService = DataService.instance
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -19,6 +24,9 @@ class MainViewController: UIViewController {
         setNeedsStatusBarAppearanceUpdate()
         headerView.addDropShadow()
     }
+    
+    func deliciousTacoDataLoaded() {
+        print("Delicious Taco Data Loaded")
+    }
 
 }
-

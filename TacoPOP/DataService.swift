@@ -6,14 +6,13 @@
 //  Copyright © 2016 Student Driver. All rights reserved.
 //
 
-
 class DataService {
+    
     static let instance = DataService()
     var tacoArray : [Taco]!
+    weak var delegate : PDataServiceDelegate?
     
     func loadDeliciousTacoData() {
-        
-        
         
         // Chicken Tacos
         tacoArray.append(Taco(id: 1, productName: "Loaded Flour Chicken Taco", shellId: 1, proteinId: 2, condimentId: 1))
@@ -38,5 +37,7 @@ class DataService {
         tacoArray.append(Taco(id: 14, productName: "Loaded Corn Fish Taco", shellId: 2, proteinId: 4, condimentId: 1))
         tacoArray.append(Taco(id: 15, productName: "Plain Flour Fish Taco", shellId: 1, proteinId: 4, condimentId: 2))
         tacoArray.append(Taco(id: 16, productName: "Plain Corn Fish Taco", shellId: 2, proteinId: 4, condimentId: 2))
+        
+        delegate?.deliciousTacoDataLoaded()
     }
 }

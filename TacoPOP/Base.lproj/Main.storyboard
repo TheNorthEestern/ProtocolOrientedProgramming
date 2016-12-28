@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,15 +39,31 @@
                                     <constraint firstAttribute="height" constant="80" id="yMj-mN-efD"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F88-D9-RPg">
+                                <rect key="frame" x="16" y="100" width="343" height="547"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0lE-Zp-9JX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F88-D9-RPg" secondAttribute="bottom" constant="20" id="IdT-ge-O0Z"/>
+                            <constraint firstItem="F88-D9-RPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="J8I-by-9ct"/>
                             <constraint firstAttribute="trailing" secondItem="YoW-Pa-qNq" secondAttribute="trailing" id="Ojw-GO-tMn"/>
+                            <constraint firstItem="F88-D9-RPg" firstAttribute="top" secondItem="YoW-Pa-qNq" secondAttribute="bottom" constant="20" id="aWC-Zd-Evd"/>
+                            <constraint firstItem="F88-D9-RPg" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="i6W-eQ-C5s"/>
                             <constraint firstItem="YoW-Pa-qNq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qyo-8Z-VJ8"/>
                             <constraint firstItem="YoW-Pa-qNq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="s1e-eD-s3g"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="F88-D9-RPg" id="tM8-Ts-Jpk"/>
                         <outlet property="headerView" destination="YoW-Pa-qNq" id="6vf-JS-8rz"/>
                     </connections>
                 </viewController>
