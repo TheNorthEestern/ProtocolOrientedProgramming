@@ -9,7 +9,7 @@
 class DataService {
     
     static let instance = DataService()
-    var tacoArray : [Taco]!
+    var tacoArray = [Taco]()
     weak var delegate : PDataServiceDelegate?
     
     func loadDeliciousTacoData() {
