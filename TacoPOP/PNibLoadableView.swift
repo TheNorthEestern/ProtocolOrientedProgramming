@@ -14,6 +14,6 @@ protocol PNibLoadableView : class {
 
 extension PNibLoadableView where Self : UIView {
     static var nibName : String {
-        return String(self)
+        return String(describing: self)
     }
 }
