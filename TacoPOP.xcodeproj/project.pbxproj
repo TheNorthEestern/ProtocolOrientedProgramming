@@ -16,6 +16,7 @@
 		AFB5429E1E0DA34C00A5A503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429D1E0DA34C00A5A503 /* Assets.xcassets */; };
 		AFB542A11E0DA34C00A5A503 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFB5429F1E0DA34C00A5A503 /* LaunchScreen.storyboard */; };
 		AFB542B31E0ED04700A5A503 /* PDropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFB542B21E0ED04700A5A503 /* PDropShadow.swift */; };
+		AFEABBB51E1E2A4500DED200 /* MutableCollection+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEABBB41E1E2A4500DED200 /* MutableCollection+Ext.swift */; };
 		AFFD6D941E13623000C0E26E /* PDataServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD6D931E13623000C0E26E /* PDataServiceDelegate.swift */; };
 		AFFD6D971E1367A700C0E26E /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD6D951E1367A700C0E26E /* TacoCell.swift */; };
 		AFFD6D981E1367A700C0E26E /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFD6D961E1367A700C0E26E /* TacoCell.xib */; };
@@ -36,6 +37,7 @@
 		AFB542A01E0DA34C00A5A503 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFB542A21E0DA34C00A5A503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFB542B21E0ED04700A5A503 /* PDropShadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDropShadow.swift; sourceTree = "<group>"; };
+		AFEABBB41E1E2A4500DED200 /* MutableCollection+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MutableCollection+Ext.swift"; sourceTree = "<group>"; };
 		AFFD6D931E13623000C0E26E /* PDataServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDataServiceDelegate.swift; sourceTree = "<group>"; };
 		AFFD6D951E1367A700C0E26E /* TacoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
 		AFFD6D961E1367A700C0E26E /* TacoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AFFD6D9D1E13739400C0E26E /* UICollectionView+Ext.swift */,
+				AFEABBB41E1E2A4500DED200 /* MutableCollection+Ext.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFEABBB51E1E2A4500DED200 /* MutableCollection+Ext.swift in Sources */,
 				AFFD6D9A1E1372A000C0E26E /* PReusableView.swift in Sources */,
 				AFFD6D971E1367A700C0E26E /* TacoCell.swift in Sources */,
 				AFB542991E0DA34C00A5A503 /* MainViewController.swift in Sources */,
