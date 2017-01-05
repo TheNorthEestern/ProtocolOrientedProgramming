@@ -55,7 +55,7 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
-        cell.configureCell(ds.tacoArray[indexPath.row])
+        cell.configureCell(dataService.tacoArray[indexPath.row])
         return cell
     }
     
