@@ -31,8 +31,10 @@ class MainViewController: UIViewController, PDataServiceDelegate {
         setNeedsStatusBarAppearanceUpdate()
         headerView.addDropShadow()
         
-        let nib = UINib(nibName: "TacoCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        collectionView.register(TacoCell.self)
+        
+        /*let nib = UINib(nibName: "TacoCell", bundle: nil)
+        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")*/
     }
     
     func deliciousTacoDataLoaded() {
@@ -52,11 +54,9 @@ extension MainViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell {
-            cell.configureCell(taco: dataService.tacoArray[indexPath.row])
-            return cell
-        }
-        return UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(forIndexPath: indexPath) as TacoCell
+        cell.configureCell(ds.tacoArray[indexPath.row])
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
